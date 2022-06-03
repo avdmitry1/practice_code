@@ -16,4 +16,4 @@ def maximum(arr):
     return max(arr)
 
 
-minimum([4, 6, 2, 1, 9, 63, -134, 566]), maximum([4, 6, 2, 1, 9, 63, -134, 566])
+print(maximum([4, 6, 2, 1, 9, 63, -134, 566]), minimum([4, 6, 2, 1, 9, 63, -134, 566]))
