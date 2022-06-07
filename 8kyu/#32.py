@@ -13,5 +13,4 @@ def century(year):
     # Finish this :)
     return year // 100 + 1 if year % 10 != 0 or year % 100 != 0 else year // 100
 
-
 print(century(1805))
