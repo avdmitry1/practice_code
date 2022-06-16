@@ -7,8 +7,7 @@ def format_namelist(name):
     elif len(names) == 2:
         return ' и '.join(names)
     elif len(names) >= 3:
-        for i in names[:-2]:
-            return ', '.join(names[:-1]) + ' и ' + names[-1]
+        return ', '.join(names[:-1]) + ' и ' + names[-1]
 
 
-print(format_namelist([ {'name': 'Bart'}, {'name': 'Lisa'}, {'name': 'Maggie'} ]))
+print(format_namelist([{'name': 'Bart'}, {'name': 'Lisa'}, {'name': 'Maggie'}]))
