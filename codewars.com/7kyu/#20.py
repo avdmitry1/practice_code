@@ -1,6 +1,5 @@
 def binary_array_to_number(arr):
-    x = [str(i) for i in arr]
-    result = ''.join(x)
+    result = ''.join(str(i) for i in arr)
     return int(result, 2)
 
 
