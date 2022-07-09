@@ -22,4 +22,4 @@ def binary_search(l1st, item):
 
 
 lst = [1, 2, 3, 6, 8, 9, 10, 14, 21]
-print(binary_search(lst, 10))
+print(binary_search(lst, 1))
