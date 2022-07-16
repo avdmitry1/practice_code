@@ -1,7 +1,6 @@
 def name_shuffler(str_):
     str_ = str_.split()
-    str_.reverse()
-    return ' '.join(str_)
+    return ' '.join(str_[::-1])
 
 
 print(name_shuffler('john McClane'))
