@@ -1,5 +1,5 @@
 # You need to create a dictionary d where the keys will be names and the values will be a list of
-# phone numbers for that name. Please note that one name can guard several different numbers.
+# phone numbers for that name. Please note that one name can guard  different numbers.
 # The resulting dictionary results in the command:
 # print(*sorted(d.items()))
 # P. S. To read the list of frequencies in the program, the initial lines have already been found.
