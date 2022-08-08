@@ -1,13 +1,13 @@
 # You get any card as an argument. Your task is to return the suit of this card (in lowercase).
 
 def define_suit(card):
-    if card[-1].lower() == 'c':
+    if card[-1] == 'C':
         return 'clubs'
-    elif card[-1].lower() == 'd':
+    elif card[-1] == 'D':
         return 'diamonds'
-    elif card[-1].lower() == 'h':
+    elif card[-1] == 'H':
         return 'hearts'
-    elif card[-1].lower() == 's':
+    elif card[-1] == 'S':
         return 'spades'
     print(card)
 
