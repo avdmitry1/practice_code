@@ -5,7 +5,7 @@ def is_prime(number):
             count += 1
         else:
             count += 0
-    return True if count == 2 or count == 1 else False
+    return True if count == 2 else False
 
 
 number = int(input())
