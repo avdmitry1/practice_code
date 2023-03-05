@@ -3,7 +3,7 @@
 def main():
     num_emps = int(input('Сколько записей о сотрудниках ' +
                          'вы хотите создать? '))
-    emp_file = open('emploee.txt', 'w')
+    emp_file = open('employee.txt', 'w')
     for count in range(1, num_emps + 1):
         print(f'Введите данные о сотруднике № {count} ')
         name = input('Имя: ')
