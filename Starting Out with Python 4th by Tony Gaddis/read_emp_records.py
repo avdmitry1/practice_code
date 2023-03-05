@@ -2,9 +2,14 @@
 def main():
     # Открыть файл employee.txt
     emp_file = open('employee.txt', 'r')
+    name = emp_file.readline().rstrip('\n')
     # Прочитать первую строку с именем участника
-    for i in emp_file:
-        print(i)
+    while name != '':
+        id_num = emp_file.readline().rstrip('\n')
+        dept = emp_file.readline().rstrip('\n')
+        print(f'Имя: {name}\nID: {id_num}\nОтдел: {dept}')
+        print('-' * 30)
+        name = emp_file.readline().rstrip('\n')
     emp_file.close()
 
 
