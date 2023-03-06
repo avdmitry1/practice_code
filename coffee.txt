@@ -1,6 +1,4 @@
 Lavazza
-50
-Lavazza
-120
+250
 Chibo
-55
+55.0
