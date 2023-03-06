@@ -19,7 +19,7 @@ def main():
             # Назначит флагу значение True
             found = True
         # Прочитать следующее описание
-        descr = coffee_file.readline()
+        descr = coffee_file.readline().rstrip('\n')
     coffee_file.close()
     # Если значение не найдено показать сообщение
     if not found:
