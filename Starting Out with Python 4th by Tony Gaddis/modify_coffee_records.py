@@ -4,41 +4,29 @@ import os  # Этот модуль нужен для функций remove и re
 
 
 def main():
-    # Создать булевую переменную в качестве флага
-    found = False
+
+    found = False  # Создать булевую переменную в качестве флага
     # Получить искомое значение и количество
     search = input('Введите искомое описание: ')
     new_qty = input('Введите новое количество: ')
-    # Открыть исходный файл coffee.txt
-    coffee_file = open('coffee.txt', 'r')
-    # Открыть временный файл temp.txt
-    temp_file = open('temp.txt', 'w')
-    # Прочитать поле с первой записи
-    descr = coffee_file.readline().rstrip('\n')
-    # Прочитать остаток
-    while descr != '':
-        # Прочитать поле с количеством
-        qty = float(coffee_file.readline())
-        # Записать во временый файл новую запись либо старую
-        if descr == search:
+    coffee_file = open('coffee.txt', 'r')  # Открыть исходный файл coffee.txt
+    temp_file = open('temp.txt', 'w')  # Открыть временный файл temp.txt
+    descr = coffee_file.readline().rstrip('\n')  # Прочитать поле с первой записи
+    while descr != '':  # Прочитать остаток
+        qty = float(coffee_file.readline())  # Прочитать поле с количеством
+        if descr == search:  # Записать во временый файл новую запись либо старую
             # Записать во временный файл измененную запись
             temp_file.write(f'{descr}\n')
             temp_file.write(f'{new_qty}\n')
-            # Назначить флагу новое значение
-            found = True
-        else:
-            # Записать исходную запись во временный файл
+            found = True  # Назначить флагу новое значение
+        else:  # Записать исходную запись во временный файл
             temp_file.write(f'{descr}\n')
             temp_file.write(f'{qty}\n')
-        # Прочитать следующее описание
-        descr = coffee_file.readline().rstrip('\n')
-    # Закрыть файл с данными о кофе и временный файл
-    coffee_file.close()
+        descr = coffee_file.readline().rstrip('\n')  # Прочитать следующее описание
+    coffee_file.close()  # Закрыть файл с данными о кофе и временный файл
     temp_file.close()
-    # Удалить исходный файл coffee.txt
-    os.remove('coffee.txt')
-    # Переименновать временный файл
-    os.rename('temp.txt', 'coffee.txt')
+    os.remove('coffee.txt')  # Удалить исходный файл coffee.txt
+    os.rename('temp.txt', 'coffee.txt')  # Переименновать временный файл
     # Если искомое значение в файле не найдено, показать сообщение
     print('Файл обновлен') if found else print('Это значение не найдено')
 
