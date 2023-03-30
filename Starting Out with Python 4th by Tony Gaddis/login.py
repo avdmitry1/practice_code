@@ -4,8 +4,4 @@ def get_login_name(first, last, idnumber):
     set3 = idnumber[-3:]
     login_name = set1 + set2 + set3
 
-    print(login_name)
-
-
-if __name__ == '__main__':
-    get_login_name('Avramenko', 'Dmitry', '217731327')
+    return login_name
