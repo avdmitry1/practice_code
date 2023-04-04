@@ -1,14 +1,6 @@
-import login
-
-
-def main():
-    first = input('Put your name: ')
-    last = input('Put your surname: ')
-    idnumber = input('Put your id: ')
-
-    print('Your system name: ')
-    print(login.get_login_name(first, last, idnumber))
-
-
-if __name__ == '__main__':
-    main()
+word = 'привет! меня зовут джо. а как твое имя?'
+word2 = word.split()
+res = ''
+for i in word2:
+    res += i.title() + ' '
+print(res.rstrip())
