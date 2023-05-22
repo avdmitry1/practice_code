@@ -1,5 +1,5 @@
 #  Эта программа импортирует модуль Coin и создает экземпляр класса Coin
-from Coin_demo4.py import Coin
+from Coin.py import Coin
 
 def main():
     #  Создать обьект на основе класса Coin
