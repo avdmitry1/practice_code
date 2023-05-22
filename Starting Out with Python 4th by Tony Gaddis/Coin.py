@@ -1,6 +1,6 @@
 import random
 
-class Coin:
+class Coin_one:
     def __init__(self):
         self.__sideup = 'Орел'
     def toss(self):
