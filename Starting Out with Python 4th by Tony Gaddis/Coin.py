@@ -10,3 +10,4 @@ class Coin_one:
             self.__sideup = 'Решка'
     def get_sideup(self):
         return self.__sideup
+    

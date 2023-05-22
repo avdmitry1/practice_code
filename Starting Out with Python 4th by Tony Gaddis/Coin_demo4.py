@@ -1,9 +1,9 @@
 #  Эта программа импортирует модуль Coin и создает экземпляр класса Coin
-from Coin_one import Coin
+import Coin
 
 def main():
     #  Создать обьект на основе класса Coin
-    my_coin = Coin.Coin()
+    my_coin = Coin.Coin_one()
     #  Показать обращенную вверх сторону монеты
     print('Эта сторонна обращенна вверх', my_coin.get_sideup())
     #  Подбросить монету 
