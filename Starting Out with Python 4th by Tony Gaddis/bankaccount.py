@@ -1,4 +1,4 @@
-class BankAccaunt:
+class BankAccount:
     def __init__(self, bal):
         self.__balance = bal
     def deposit(self, amount):
