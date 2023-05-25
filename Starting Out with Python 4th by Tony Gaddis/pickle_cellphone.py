@@ -8,7 +8,7 @@ def main():
     while again == 'yes':
         man = input('Введите производителя: ')
         mod = input('Введите номер модели: ')
-        retail = input('Введите розничную цену: ')
+        retail = float(input('Введите розничную цену: '))
         phone = cellphone.CellPhone(man, mod, retail)
         pickle.dump(phone, output_file)
         again = input('Введите yes если хотите продолжить: ')
