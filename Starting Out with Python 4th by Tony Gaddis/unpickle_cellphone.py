@@ -3,14 +3,14 @@ import cellphone
 
 FILENAME = 'cellphones.dat'
 def main():
-    end_of_file = False
+    end_of_file = True
     input_file = open(FILENAME, 'rb')
-    while not end_of_file:
+    while end_of_file:
         try:
             phone = pickle.load(input_file)
             display_data(phone)
         except EOFError:
-            end_of_file = True
+            end_of_file = False
     input_file.close()
 
 
