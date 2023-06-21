@@ -8,6 +8,5 @@ def main():
     print('Цена -', used_car.get_price(), '$')
     print('Количество дверей -', used_car.get_doors())
     
-    
 if __name__ == '__main__':
     main()
