@@ -9,3 +9,4 @@ try:
     button.click()
 finally:
     browser.quit()
+    
