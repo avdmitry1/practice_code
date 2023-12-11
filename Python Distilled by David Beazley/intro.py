@@ -1,5 +1,4 @@
 def filter_string(string):
-    new = [i for i in string if i.isdecimal()]
-    return int(''.join(new))
+    return int(''.join([i for i in string if i.isdecimal()]))
     
 print(filter_string("a1b2c3"))
