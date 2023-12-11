@@ -8,5 +8,6 @@
         "Starting Out with Python 4th by Tony Gaddis"
     ],
     "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
+    "python.REPL.enableREPLSmartSend": false
 }
