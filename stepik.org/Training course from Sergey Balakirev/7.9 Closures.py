@@ -50,15 +50,56 @@
 # print(result())
 
 
-def get_list(nums, tp=tuple()):
-    def add():
-        if tp == 'list':
-            return [x for x in nums]
-        else:
-            return tuple(x for x in nums)
-    return add
+# def get_list(nums, tp=tuple()):
+#     def add():
+#         if tp == 'list':
+#             return [x for x in nums]
+#         else:
+#             return tuple(x for x in nums)
+#     return add
 
-tp = input()
-nums = list(map(int, input().split()))
-lst = get_list(nums, tp)
-print(lst())      
+# tp = input()
+# nums = list(map(int, input().split()))
+# lst = get_list(nums, tp)
+# print(lst())      
+
+
+# def create_accumulator():
+#     num = 0
+#     def add(x):
+#         nonlocal num
+#         num += x
+#         return num
+#     return add
+
+# f = create_accumulator()
+# print(f(2))
+# print(f(5))
+
+
+# def create_accumulator(start=0):
+#     def add(x):
+#         nonlocal start
+#         start += x
+#         return start
+#     return add
+    
+# f = create_accumulator(100)
+# print(f(2))
+# print(f(5))
+   
+# def create_dict():
+#     d = {}
+#     cnt = 1
+#     def add(x):
+#         nonlocal cnt
+#         d.setdefault(cnt, x)
+#         cnt += 1
+#         return d
+#     return add
+
+# f = create_dict()
+# print(f('Hello'))
+# print(f('BTC'))
+# print(f([1, 2, 3]))
+    
