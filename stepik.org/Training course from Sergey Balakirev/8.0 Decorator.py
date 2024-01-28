@@ -179,3 +179,23 @@
 # print(get_list.__doc__)
     
 
+# d = int(input())
+# d_list = []
+# for i in range(d):
+#     words = input()
+#     d_list.append(words)
+
+# l = int(input())
+# l_list = []
+# for i in range(l):
+#     words2 = input().lower()
+#     l_list.append(words2)
+    
+# errors = set()
+# for i in l_list:
+#     for j in i.split():
+#         if j.lower() not in d_list:
+#             errors.add(j.lower())
+
+# for x in errors:
+#     print(x)
