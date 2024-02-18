@@ -10,3 +10,12 @@
 #     else:
 #         a_list.append(i)
 # print(*a_list)
+
+# a = 100
+# b = 120
+# cnt = 0
+# for i in range(a, b + 1):
+#     if len(set(str(i))) == len(str(i)):
+#         cnt += 1
+# print(cnt)
+
