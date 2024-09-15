@@ -1,7 +1,7 @@
 def add(x: int, y: int):
     return x + y 
     
-def devide(x: int, y: int):
+def divide(x: int, y: int):
     try:
         return x / y
     except ZeroDivisionError:
@@ -22,7 +22,7 @@ def exponent(x: int, y: int):
 while True:
     print('*' * 50)
     print('1 -> add')
-    print('2 -> devide')
+    print('2 -> divide')
     print('3 -> multi')
     print('4 -> subtraction')
     print('5 -> exponent')
@@ -37,10 +37,10 @@ while True:
         y = int(input('Enter second number: '))
         print(add(x, y))
     
-    elif ask == 'devide':
+    elif ask == 'divide':
         x = int(input('Enter first number: '))
         y = int(input('Enter second number: '))
-        print(devide(x, y))
+        print(divide(x, y))
 
     elif ask == 'multi':
         x = int(input('Enter first number: '))
