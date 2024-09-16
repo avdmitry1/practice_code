@@ -19,7 +19,7 @@ class User:
         self.email = email
 
 
-    def get_emain(self):
+    def get_email(self):
         """Returns the user's email address if valid, otherwise raises an exception."""
         if '@' in self.email:
             return self.email
@@ -29,6 +29,6 @@ class User:
 
 try:
     user1 = User('avdmitry@gmail.com')
-    print(user1.get_emain())
+    print(user1.get_email())
 except InvalidMailError as e:
     print(e)
