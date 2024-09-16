@@ -32,19 +32,19 @@ while True:
             print('Have a good day')
             break
 
-        if sport_choice == '1':
+        elif sport_choice == '1':
             name_coach = get_coaches('Arteta')
             print(f'Coach name - {name_coach[1]}. \nSport - {name_coach[0]}')
             print('Training days -', get_schedules(name_coach[0]))
             print('Training price -', get_prices(name_coach[0]))
  
-        if sport_choice == '2':
+        elif sport_choice == '2':
             name_coach = get_coaches('Kid')
             print(f'Coach name - {name_coach[1]}. \nSport - {name_coach[0]}')
             print('Training days -', get_schedules(name_coach[0]))
             print('Training price -', get_prices(name_coach[0]))
 
-        if sport_choice == '3':
+        elif sport_choice == '3':
             name_coach = get_coaches('Leon')
             print(f'Coach name - {name_coach[1]}. \nSport - {name_coach[0]}')
             print('Training days -', get_schedules(name_coach[0]))
