@@ -1,7 +1,7 @@
 class Customer:
-    def __init__(self, name: str, surename: str, department: str, start_date: int):
+    def __init__(self, name: str, surname: str, department: str, start_date: int):
         self.name = self.check_name(name)
-        self.surename = surename
+        self.surname = surname
         self.department = department
         self.start_date = self.check_start_date(start_date)
 
