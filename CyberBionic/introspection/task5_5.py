@@ -34,10 +34,10 @@ delattr(player2, 'job')
 try:
     print(player2.get_contact())
 except AttributeError:
-    print('Attribute Job was deleted')
+    print('Attribute "Job" was deleted')
 print('------------------------------------------------------------------------------------')
 def get_new_contact(self):
-    return super(UpdateContact, self).get_contact(), 'Attribute job was deleted, new method rewrite'
+    return super(UpdateContact, self).get_contact(), 'Attribute "job" was deleted, new method rewrite'
 setattr(player2, 'get_contact', get_new_contact.__get__(player2, UpdateContact))
 print('------------------------------------------------------------------------------------')
 print(player2.get_contact())
