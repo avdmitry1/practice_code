@@ -29,7 +29,7 @@ class Client:
     def get_order_history(self):
         return self.client_order_history
     
-    def update_client(self, new_client_name: str, new_client_email: str, new_client_phone: str, new_client_address: str)
+    def update_client(self, new_client_name: str, new_client_email: str, new_client_phone: str, new_client_address: str):
         self.client_name = new_client_name
         self.client_email = new_client_email
         self.client_phone = new_client_phone
