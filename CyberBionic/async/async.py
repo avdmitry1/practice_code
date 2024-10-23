@@ -89,5 +89,5 @@ urls = [
     "https://jsonplaceholder.typicode.com/todos/1",
 ]
 
-get_content(urls)
-asyncio.run(main(urls))
+get_content(urls) #синхронний  request
+asyncio.run(main(urls)) #асинхронний request
