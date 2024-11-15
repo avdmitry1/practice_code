@@ -1,10 +1,11 @@
-## Functions. Decorators. Decorators. Task 1.
+## Functions. Decorators. Decorators. Task 1
 
 ***
 Create a decorator function `time_decorator` which has to calculate decorated function execution time
-and put this time value to `execution_time` dictionary where `key` is 
+and put this time value to `execution_time` dictionary where `key` is
 decorated function name and `value` is this function execution time.
 For example:
+
 ```python
 @time_decorator
 def func_add(a, b):
