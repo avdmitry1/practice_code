@@ -32,7 +32,8 @@ def save_to_db(currency_name, currency_value):
     current_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     cursor.execute(
         """
-    INSERT INTO exchange_rate_to_usd (currency_name, currency_value, current_date)
+    INSERT INTO exchange_rate_to_usd /
+    (currency_name, currency_value, current_date)
     VALUES (?, ?, ?)
     """,
         (currency_name, currency_value, current_date),

@@ -1,6 +1,5 @@
 import csv
 import json
-import xml.etree.ElementTree as ET
 
 
 def input_data():
