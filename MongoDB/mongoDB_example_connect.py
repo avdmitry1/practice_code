@@ -12,7 +12,7 @@ to a MongoDB Atlas cluster.
 from pymongo import MongoClient
 
 
-CONNECTION_STRING = "mongodb+srv://avdmitry1:hn2LExnyFhCPDnxm@test.7402i.mongodb.net/"
+CONNECTION_STRING = "mongodb+srv://user_name:password@test.7402i.mongodb.net/"
 
 
 def connect_to_mongo(connection_string: str) -> MongoClient:
